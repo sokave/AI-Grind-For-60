@@ -1,0 +1,6 @@
+model,threshold,accuracy,f1,validation_f1,validation_accuracy,inference_seconds,parameters
+tabularisai/multilingual-sentiment-analysis,0.5,0.95,0.949874686716792,1.0,1.0,1.1888917376666843,135328517
+cardiffnlp/twitter-xlm-roberta-base-sentiment,0.5,1.0,1.0,1.0,1.0,1.8552093723331684,278045955
+cardiffnlp/twitter-xlm-roberta-base-sentiment,0.35,1.0,1.0,1.0,1.0,1.8552093723331684,278045955
+cardiffnlp/twitter-xlm-roberta-base-sentiment,0.65,0.95,0.949874686716792,1.0,1.0,1.8552093723331684,278045955
+cardiffnlp/twitter-xlm-roberta-base-sentiment,0.8,0.95,0.949874686716792,1.0,1.0,1.8552093723331684,278045955

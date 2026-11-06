@@ -1,0 +1,3 @@
+model,val_loss,best_iteration,last_iteration,parameters,training_seconds,evaluation_seconds,eval_points,vocab_size,embed_dim,n_heads,n_layers,context_len,dropout,batch_size,learning_rate,max_iters,eval_interval,eval_iters,section
+demo_minigpt,7.637468338012695,400,400,1581760,5.898156973000027,0.5199903449998828,9,16000,48,4,1,32,0.1,8,0.0005,400,50,4,demo_minigpt
+demo_minigpt_eval10,7.637468338012695,400,400,1581760,8.282625718999952,1.1600634270002956,41,16000,48,4,1,32,0.1,8,0.0005,400,10,4,demo_minigpt

@@ -1,0 +1,3 @@
+tokenizer,vocab_size,documents,mean_tokens,unk_fraction
+BPE 16000,16000,17918,1027.798917289876,0.0
+BPE 6000,6000,17918,1175.748074561893,0.0

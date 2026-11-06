@@ -1,0 +1,10 @@
+model,val_loss,best_iteration,last_iteration,parameters,training_seconds,evaluation_seconds,eval_points,vocab_size,embed_dim,n_heads,n_layers,context_len,dropout,batch_size,learning_rate,max_iters,eval_interval,eval_iters,section,threshold,accuracy,f1,validation_f1,validation_accuracy,inference_seconds
+demo_minigpt,7.637468338012695,400.0,400.0,1581760,5.898156973000027,0.5199903449998828,9.0,16000.0,48.0,4.0,1.0,32.0,0.1,8.0,0.0005,400.0,50.0,4.0,demo_minigpt,,,,,,
+demo_minigpt_eval10,7.637468338012695,400.0,400.0,1581760,8.282625718999952,1.1600634270002956,41.0,16000.0,48.0,4.0,1.0,32.0,0.1,8.0,0.0005,400.0,10.0,4.0,demo_minigpt,,,,,,
+minigpt_v1,5.015735864639282,5000.0,5000.0,318208,271.8238290140007,9.215133777999654,51.0,2048.0,64.0,4.0,1.0,64.0,0.1,8.0,0.001,5000.0,100.0,6.0,own_minigpt,,,,,,
+minigpt_v2,4.968275547027588,5000.0,5000.0,368000,406.99082971000007,10.79815582000083,51.0,2048.0,64.0,4.0,2.0,64.0,0.1,8.0,0.001,5000.0,100.0,6.0,own_minigpt,,,,,,
+tabularisai/multilingual-sentiment-analysis,,,,135328517,,,,,,,,,,,,,,,ready_sentiment,0.5,0.95,0.949874686716792,1.0,1.0,1.1888917376666843
+cardiffnlp/twitter-xlm-roberta-base-sentiment,,,,278045955,,,,,,,,,,,,,,,ready_sentiment,0.5,1.0,1.0,1.0,1.0,1.8552093723331684
+cardiffnlp/twitter-xlm-roberta-base-sentiment,,,,278045955,,,,,,,,,,,,,,,ready_sentiment,0.35,1.0,1.0,1.0,1.0,1.8552093723331684
+cardiffnlp/twitter-xlm-roberta-base-sentiment,,,,278045955,,,,,,,,,,,,,,,ready_sentiment,0.65,0.95,0.949874686716792,1.0,1.0,1.8552093723331684
+cardiffnlp/twitter-xlm-roberta-base-sentiment,,,,278045955,,,,,,,,,,,,,,,ready_sentiment,0.8,0.95,0.949874686716792,1.0,1.0,1.8552093723331684

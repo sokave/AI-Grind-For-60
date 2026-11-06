@@ -1,0 +1,12 @@
+{
+  "MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli": "0a71e92a985b6e1ad1828cf67ce9c459639c1dca",
+  "distilbert/distilgpt2": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+  "Qwen/Qwen3-0.6B": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "distilbert/distilroberta-base": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+  "dslim/bert-base-NER": "d1a3e8f13f8c3566299d95fcfc9a8d2382a9affc",
+  "youscan/ukr-roberta-base": "8149bde480a6df9014aa934c3f8af30858dea5a6",
+  "google/tapas-base-finetuned-wtq": "e3dde1905dea877b0df1a5c057533e48327dee77",
+  "tabularisai/multilingual-sentiment-analysis": "eea032081f8d247b4303ef3565e7cec1b6f201c9",
+  "cardiffnlp/twitter-xlm-roberta-base-sentiment": "f2f1202b1bdeb07342385c3f807f9c07cd8f5cf8",
+  "ukr-models/uk-ner": "5dbb7e2ddde8efda84b8240504fe7ec049cbbb06"
+}

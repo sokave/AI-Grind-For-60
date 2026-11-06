@@ -1,0 +1,8 @@
+{
+  "dataset": "nyuuzyou/ukr-lit",
+  "revision": "d59a871c8c30b98ab0eaa0545af31dc0861cdce0",
+  "file": "ukr-lit-0.jsonl.zst",
+  "license": "cc0-1.0",
+  "documents": 1000,
+  "characters": 3655952
+}

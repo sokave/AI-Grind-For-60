@@ -1,0 +1,21 @@
+{
+  "model": "minigpt_v1",
+  "val_loss": 5.015735864639282,
+  "best_iteration": 5000,
+  "last_iteration": 5000,
+  "parameters": 318208,
+  "training_seconds": 271.8238290140007,
+  "evaluation_seconds": 9.215133777999654,
+  "eval_points": 51,
+  "vocab_size": 2048,
+  "embed_dim": 64,
+  "n_heads": 4,
+  "n_layers": 1,
+  "context_len": 64,
+  "dropout": 0.1,
+  "batch_size": 8,
+  "learning_rate": 0.001,
+  "max_iters": 5000,
+  "eval_interval": 100,
+  "eval_iters": 6
+}

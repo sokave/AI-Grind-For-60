@@ -1,0 +1,339 @@
+[
+  {
+    "task": "sentiment-analysis",
+    "language": "en",
+    "model": "tabularisai/multilingual-sentiment-analysis",
+    "input": [
+      "I've been waiting for a HuggingFace course my whole life.",
+      "I hate this so much!"
+    ],
+    "result": [
+      {
+        "label": "Negative",
+        "score": 0.6122719049453735
+      },
+      {
+        "label": "Negative",
+        "score": 0.5749102234840393
+      }
+    ]
+  },
+  {
+    "task": "zero-shot-classification",
+    "language": "en",
+    "model": "MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli",
+    "input": "This is a course about the Transformers library",
+    "result": {
+      "sequence": "This is a course about the Transformers library",
+      "labels": [
+        "education",
+        "business",
+        "politics"
+      ],
+      "scores": [
+        0.4391416609287262,
+        0.3867245316505432,
+        0.1741338074207306
+      ]
+    }
+  },
+  {
+    "task": "text-generation",
+    "language": "en",
+    "model": "distilbert/distilgpt2",
+    "input": "In this course, we will teach you how to",
+    "result": [
+      {
+        "generated_text": "In this course, we will teach you how to use the internet to create your own own web site.\n\n\nWe will be talking about how"
+      }
+    ]
+  },
+  {
+    "task": "fill-mask",
+    "language": "en",
+    "model": "distilbert/distilroberta-base",
+    "input": "This course will teach you all about <mask> models.",
+    "result": [
+      {
+        "score": 0.196197509765625,
+        "token": 30412,
+        "token_str": " mathematical",
+        "sequence": "This course will teach you all about mathematical models."
+      },
+      {
+        "score": 0.04052724316716194,
+        "token": 38163,
+        "token_str": " computational",
+        "sequence": "This course will teach you all about computational models."
+      }
+    ]
+  },
+  {
+    "task": "ner",
+    "language": "en",
+    "model": "dslim/bert-base-NER",
+    "input": "My name is Sylvain and I work at Hugging Face in Brooklyn.",
+    "result": [
+      {
+        "entity_group": "PER",
+        "score": 0.9986273050308228,
+        "word": "S",
+        "start": 11,
+        "end": 12
+      },
+      {
+        "entity_group": "PER",
+        "score": 0.9346041679382324,
+        "word": "##yl",
+        "start": 12,
+        "end": 14
+      },
+      {
+        "entity_group": "PER",
+        "score": 0.7915612459182739,
+        "word": "##va",
+        "start": 14,
+        "end": 16
+      },
+      {
+        "entity_group": "PER",
+        "score": 0.9047081470489502,
+        "word": "##in",
+        "start": 16,
+        "end": 18
+      },
+      {
+        "entity_group": "ORG",
+        "score": 0.9670037031173706,
+        "word": "Hu",
+        "start": 33,
+        "end": 35
+      },
+      {
+        "entity_group": "ORG",
+        "score": 0.9369034767150879,
+        "word": "##gging Face",
+        "start": 35,
+        "end": 45
+      },
+      {
+        "entity_group": "LOC",
+        "score": 0.9971418976783752,
+        "word": "Brooklyn",
+        "start": 49,
+        "end": 57
+      }
+    ]
+  },
+  {
+    "task": "table-question-answering",
+    "language": "en",
+    "model": "google/tapas-base-finetuned-wtq",
+    "input": {
+      "query": "How many stars does the transformers repository have?",
+      "table": {
+        "Repository": [
+          "Transformers",
+          "Datasets",
+          "Tokenizers"
+        ],
+        "Stars": [
+          "36542",
+          "4512",
+          "3934"
+        ],
+        "Contributors": [
+          "651",
+          "77",
+          "34"
+        ],
+        "Programming language": [
+          "Python",
+          "Python",
+          "Rust, Python and NodeJS"
+        ]
+      }
+    },
+    "result": {
+      "answer": "AVERAGE > 36542",
+      "coordinates": [
+        [
+          0,
+          1
+        ]
+      ],
+      "cells": [
+        "36542"
+      ],
+      "aggregator": "AVERAGE"
+    }
+  },
+  {
+    "task": "sentiment-analysis",
+    "language": "uk",
+    "model": "tabularisai/multilingual-sentiment-analysis",
+    "input": [
+      "Дякую за зрозумілу лекцію, тепер я впевнено розв’язую задачі.",
+      "Заняття постійно скасовують, така організація мене обурює."
+    ],
+    "result": [
+      {
+        "label": "Neutral",
+        "score": 0.4263422191143036
+      },
+      {
+        "label": "Negative",
+        "score": 0.60517418384552
+      }
+    ]
+  },
+  {
+    "task": "zero-shot-classification",
+    "language": "uk",
+    "model": "MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli",
+    "input": "Студенти створили програму, яка допомагає автоматично перевіряти навчальні роботи.",
+    "result": {
+      "sequence": "Студенти створили програму, яка допомагає автоматично перевіряти навчальні роботи.",
+      "labels": [
+        "освіта",
+        "спорт",
+        "економіка"
+      ],
+      "scores": [
+        0.996864378452301,
+        0.0017951024929061532,
+        0.0013404878554865718
+      ]
+    }
+  },
+  {
+    "task": "text-generation",
+    "language": "uk",
+    "model": "Qwen/Qwen3-0.6B",
+    "input": "Напиши українською два речення для оголошення про студентський клуб робототехніки.",
+    "result": [
+      {
+        "generated_text": "1. У студентському клубі робототехніки увідомляється про розмітку і зміст роботи, що допомагає узагальнити знання студентів.  \n"
+      }
+    ]
+  },
+  {
+    "task": "fill-mask",
+    "language": "uk",
+    "model": "youscan/ukr-roberta-base",
+    "input": "Студенти навчаються в <mask> та працюють над цікавими проєктами.",
+    "result": [
+      {
+        "score": 0.06182388588786125,
+        "token": 10450,
+        "token_str": " класі",
+        "sequence": "Студенти навчаються в  класі та працюють над цікавими проєктами."
+      },
+      {
+        "score": 0.050886135548353195,
+        "token": 14434,
+        "token_str": " інтернеті",
+        "sequence": "Студенти навчаються в  інтернеті та працюють над цікавими проєктами."
+      },
+      {
+        "score": 0.04648713022470474,
+        "token": 4525,
+        "token_str": " школі",
+        "sequence": "Студенти навчаються в  школі та працюють над цікавими проєктами."
+      },
+      {
+        "score": 0.03260503709316254,
+        "token": 7869,
+        "token_str": " університеті",
+        "sequence": "Студенти навчаються в  університеті та працюють над цікавими проєктами."
+      },
+      {
+        "score": 0.02468295954167843,
+        "token": 33224,
+        "token_str": " університетах",
+        "sequence": "Студенти навчаються в  університетах та працюють над цікавими проєктами."
+      }
+    ]
+  },
+  {
+    "task": "ner",
+    "language": "uk",
+    "model": "ukr-models/uk-ner",
+    "input": "Олена Коваленко приїхала до Львова та відвідала Львівський національний університет.",
+    "result": [
+      {
+        "entity_group": "PER",
+        "score": 0.9999728202819824,
+        "word": "О",
+        "start": 0,
+        "end": 1
+      },
+      {
+        "entity_group": "PER",
+        "score": 0.999988853931427,
+        "word": "лена Коваленко",
+        "start": 1,
+        "end": 15
+      },
+      {
+        "entity_group": "LOC",
+        "score": 0.9999794960021973,
+        "word": "Львова",
+        "start": 28,
+        "end": 34
+      },
+      {
+        "entity_group": "ORG",
+        "score": 0.999981164932251,
+        "word": "Львівськ",
+        "start": 48,
+        "end": 56
+      },
+      {
+        "entity_group": "ORG",
+        "score": 0.9806279540061951,
+        "word": "ий національний університет.",
+        "start": 56,
+        "end": 84
+      }
+    ]
+  },
+  {
+    "task": "table-question-answering",
+    "language": "uk",
+    "model": "google/tapas-base-finetuned-wtq",
+    "input": {
+      "query": "Який університет має 1200 студентів?",
+      "table": {
+        "Університет": [
+          "Київська політехніка",
+          "Львівська політехніка",
+          "Житомирська політехніка"
+        ],
+        "Студентів": [
+          "900",
+          "1400",
+          "1200"
+        ],
+        "Груп": [
+          "30",
+          "45",
+          "40"
+        ]
+      }
+    },
+    "result": {
+      "answer": "Житомирська політехніка",
+      "coordinates": [
+        [
+          2,
+          0
+        ]
+      ],
+      "cells": [
+        "Житомирська політехніка"
+      ],
+      "aggregator": "NONE"
+    }
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "answer": "Якось уночі студент Житомирської політехніки прокинувся від дивного шуму. Він підвівся з ліжка.",
+    "temperature": 0.2,
+    "top_p": 0.1,
+    "enable_thinking": false,
+    "tokens": 52,
+    "thinking_tokens": 0,
+    "seconds": 7.762825084000042
+  },
+  {
+    "answer": "підвівся з ліжка, він звів у звіті про відкриття місця, якого змінили з кількох років тому.",
+    "temperature": 0.8,
+    "top_p": 0.6,
+    "enable_thinking": false,
+    "tokens": 59,
+    "thinking_tokens": 0,
+    "seconds": 2.4960572200000115
+  },
+  {
+    "answer": "оже підвілся з ліжка театральні ворохі з вніских виразів, мишнодток happen.",
+    "temperature": 1.4,
+    "top_p": 0.8,
+    "enable_thinking": false,
+    "tokens": 40,
+    "thinking_tokens": 0,
+    "seconds": 1.6938104900000326
+  }
+]

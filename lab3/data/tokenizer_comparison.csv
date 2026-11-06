@@ -1,0 +1,4 @@
+algorithm,vocab_size,sample_tokens,sample_unk
+BPE,500,73,0
+WordPiece,500,68,0
+Unigram,500,66,0

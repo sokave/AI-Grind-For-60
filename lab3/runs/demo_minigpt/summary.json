@@ -1,0 +1,21 @@
+{
+  "model": "demo_minigpt",
+  "val_loss": 7.637468338012695,
+  "best_iteration": 400,
+  "last_iteration": 400,
+  "parameters": 1581760,
+  "training_seconds": 5.898156973000027,
+  "evaluation_seconds": 0.5199903449998828,
+  "eval_points": 9,
+  "vocab_size": 16000,
+  "embed_dim": 48,
+  "n_heads": 4,
+  "n_layers": 1,
+  "context_len": 32,
+  "dropout": 0.1,
+  "batch_size": 8,
+  "learning_rate": 0.0005,
+  "max_iters": 400,
+  "eval_interval": 50,
+  "eval_iters": 4
+}

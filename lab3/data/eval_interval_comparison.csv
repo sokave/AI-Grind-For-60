@@ -1,0 +1,3 @@
+model,eval_interval,eval_points,training_seconds,evaluation_seconds,val_loss,best_iteration
+demo_minigpt,50,9,5.898156973000027,0.5199903449998828,7.637468338012695,400
+demo_minigpt_eval10,10,41,8.282625718999952,1.1600634270002956,7.637468338012695,400

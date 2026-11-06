@@ -1,0 +1,5 @@
+{
+  "model": "cardiffnlp/twitter-xlm-roberta-base-sentiment",
+  "revision": "f2f1202b1bdeb07342385c3f807f9c07cd8f5cf8",
+  "threshold": 0.5
+}
