@@ -1,0 +1,46 @@
+{
+  "tests": [
+    {
+      "test": "test_01_valid_quote",
+      "status": "passed"
+    },
+    {
+      "test": "test_02_empty_input",
+      "status": "passed"
+    },
+    {
+      "test": "test_03_context_limit",
+      "status": "passed"
+    },
+    {
+      "test": "test_04_invalid_json",
+      "status": "passed"
+    },
+    {
+      "test": "test_05_ungrounded_answer",
+      "status": "passed"
+    },
+    {
+      "test": "test_06_statement_in_question",
+      "status": "passed"
+    },
+    {
+      "test": "test_07_sdk_timeout_mapping",
+      "status": "passed"
+    },
+    {
+      "test": "test_08_real_connection_refused",
+      "status": "failed"
+    },
+    {
+      "test": "test_09_http_invalid_request",
+      "status": "passed"
+    },
+    {
+      "test": "test_10_real_model_http_success",
+      "status": "passed"
+    }
+  ],
+  "model": "local-cards",
+  "note": "test_07 моделює виняток таймауту SDK; test_10 звертається до реальної моделі; решта перевіряють валідацію та транспорт."
+}

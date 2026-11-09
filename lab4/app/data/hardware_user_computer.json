@@ -1,0 +1,27 @@
+{
+  "scope": "user_computer",
+  "created_at": "2026-11-09T03:16:34.358507+00:00",
+  "os": "Windows-11-10.0.26300-SP0",
+  "cpu": "AMD Ryzen 7 7735HS with Radeon Graphics",
+  "cpu_source": "Get-CimInstance Win32_Processor",
+  "logical_cpus": 16,
+  "ram_bytes": 16328007680,
+  "ram_available_bytes": 7346159616,
+  "ram_source": "psutil.virtual_memory()",
+  "nvidia_gpu": "NVIDIA GeForce RTX 4060 Laptop GPU, 8188",
+  "gpu_source": "nvidia-smi --query-gpu=name,memory.total",
+  "read_bandwidth_GB_s": 11.152,
+  "read_bandwidth_source": "Медіана 9 послідовних numpy.sum масиву 192 MB float64; приблизна ефективна пропускна здатність RAM, не паспортна характеристика",
+  "bandwidth_samples_s": [
+    0.017371099999763828,
+    0.01710800000000745,
+    0.017173900000216236,
+    0.017180300000291027,
+    0.016995400000269,
+    0.01721739999993588,
+    0.017531599999983882,
+    0.01739899999984118,
+    0.01753499999995256
+  ],
+  "notes": "Для персонального звіту додайте модель CPU/GPU і паспортну пропускну здатність RAM/VRAM з посиланням на специфікацію. Цей тест не визначає VRAM bandwidth."
+}

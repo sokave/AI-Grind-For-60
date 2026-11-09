@@ -1,0 +1,30 @@
+{
+  "cards": [
+    {
+      "question": "Квантизація зменшує кількість бітів для зберігання ваг моделі?",
+      "answer": "Квантизація зменшує кількість бітів для зберігання ваг моделі."
+    },
+    {
+      "question": "У форматі fp16 один параметр займає 2 байти?",
+      "answer": "У форматі fp16 один параметр займає 2 байти."
+    }
+  ],
+  "model": "qwen3-1.7b-q4",
+  "elapsed_s": 8.982,
+  "usage": {
+    "completion_tokens": 123,
+    "prompt_tokens": 558,
+    "total_tokens": 681,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cache_write_tokens": null,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "raw": "{\"cards\":[{\"question\":\"Квантизація зменшує кількість бітів для зберігання ваг моделі?\",\"answer\":\"Квантизація зменшує кількість бітів для зберігання ваг моделі.\"},{\"question\":\"У форматі fp16 один параметр займає 2 байти?\",\"answer\":\"У форматі fp16 один параметр займає 2 байти.\"}]}",
+  "temperature": 0,
+  "max_tokens": 640
+}

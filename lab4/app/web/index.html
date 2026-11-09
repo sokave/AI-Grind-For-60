@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Картки з конспекту</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="/" aria-label="На головну"><span class="mark">К</span> Картки з конспекту</a>
+      <span class="local"><span></span> Локальна модель</span>
+    </header>
+    <section class="intro">
+      <p class="eyebrow">ВІД НОТАТОК ДО ПОВТОРЕННЯ</p>
+      <h1>Збережіть головне.<br><span>Перевірте себе.</span></h1>
+      <p>Додайте короткий конспект і отримайте запитання з відповідями, які можна знайти у вашому тексті.</p>
+    </section>
+    <div class="workspace">
+      <section class="panel input-panel" aria-labelledby="notes-title">
+        <div class="panel-heading"><h2 id="notes-title"><span class="step">01</span> Ваш конспект</h2><span id="counter">0 / 1800</span></div>
+        <label for="source">Текст лекції або власні нотатки</label>
+        <textarea id="source" placeholder="Наприклад: Квантизація зменшує кількість бітів для зберігання ваг моделі…" maxlength="1800"></textarea>
+        <div class="examples"><span>Спробувати приклад:</span><button id="example-ml" type="button">Моделі</button><button id="example-net" type="button">Мережі</button></div>
+        <div class="settings"><label for="count">Кількість карток</label><select id="count"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option></select></div>
+        <button id="generate" class="primary" type="button">Створити картки <span aria-hidden="true">↗</span></button>
+        <p class="hint">До 1800 символів і 2800 байтів UTF-8. Довгі нотатки поділіть на частини.</p>
+      </section>
+      <section class="panel output-panel" aria-labelledby="cards-title">
+        <div class="panel-heading"><h2 id="cards-title"><span class="step">02</span> Для повторення</h2><button id="export" class="text-button" disabled type="button">Зберегти JSON ↓</button></div>
+        <div id="status" class="status" role="status" aria-live="polite">Готово до роботи</div>
+        <div id="error" class="error" role="alert" hidden></div>
+        <div id="empty" class="empty"><div class="empty-icon">?<span>✓</span></div><h3>Місце для ваших карток</h3><p>Створіть набір, відкривайте відповіді<br>й повторюйте матеріал у власному темпі.</p></div>
+        <div id="cards" class="cards"></div>
+        <div id="result-meta" class="result-meta" hidden></div>
+      </section>
+    </div>
+    <footer><span id="model">Підключення до локального API…</span><span>temperature 0 · контекст 4096 · до 640 токенів</span></footer>
+    <p class="footnote">Перевірка цитат підтверджує походження відповіді з конспекту. Перевіряйте також відповідність запитання відповіді.</p>
+  </main>
+</body>
+</html>

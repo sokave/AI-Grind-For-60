@@ -1,0 +1,19 @@
+{
+  "local_cpu_before_after_measured": true,
+  "same_10_prompts_saved": true,
+  "app_cli_recorded": true,
+  "http_backend_tested": true,
+  "web_browser_visual_test_completed": false,
+  "colab_t4_demo_executed": false,
+  "personal_computer_hardware_known": false,
+  "personal_blind_votes_entered": false,
+  "measurement_scope": "execution_environment",
+  "pending": [
+    "Запуск оригінального GPU-демо та додаткових експериментів у Colab T4",
+    "Власні сліпі оцінки й пояснення конкретних отриманих відповідей",
+    "CPU/RAM/GPU/VRAM та паспортна пропускна здатність особистого ПК",
+    "Повторення before/after на особистому ПК",
+    "Перевірка вебінтерфейсу у своєму браузері",
+    "Публічний репозиторій та посилання у формі здачі"
+  ]
+}

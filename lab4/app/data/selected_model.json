@@ -1,0 +1,8 @@
+{
+  "model": "Qwen3-1.7B",
+  "quantization": "Q4_K_M",
+  "filename": "Qwen3-1.7B-Q4_K_M.gguf",
+  "alias": "local-cards",
+  "reason": "Швидший і менший GGUF; формальні перевірки 9/10 в обох варіантах. Змістові помилки потребують перевірки користувачем.",
+  "scope": "execution_environment"
+}

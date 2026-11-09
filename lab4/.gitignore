@@ -1,0 +1,7 @@
+app/.venv/
+app/models/
+app/__pycache__/
+app/study_cards.json
+app/data/previous_runs/
+*.pyc
+recording_tmp_*/

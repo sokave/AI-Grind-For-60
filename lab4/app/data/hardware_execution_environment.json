@@ -1,0 +1,27 @@
+{
+  "scope": "execution_environment",
+  "created_at": "2026-11-07T04:21:34.855320+00:00",
+  "os": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "cpu": "Модель CPU не доступна у цьому середовищі",
+  "cpu_source": "platform.processor()",
+  "logical_cpus": 9,
+  "ram_bytes": 10451427328,
+  "ram_available_bytes": 8974315520,
+  "ram_source": "psutil.virtual_memory()",
+  "nvidia_gpu": "nvidia-smi недоступна; NVIDIA GPU не виявлено цим способом",
+  "gpu_source": "nvidia-smi --query-gpu=name,memory.total",
+  "read_bandwidth_GB_s": 27.286,
+  "read_bandwidth_source": "Медіана 9 послідовних numpy.sum масиву 192 MB float64; приблизна ефективна пропускна здатність RAM, не паспортна характеристика",
+  "bandwidth_samples_s": [
+    0.0071237300001030235,
+    0.007072565000044051,
+    0.006935701999964294,
+    0.013469520999933593,
+    0.006940249000081167,
+    0.007046575999993365,
+    0.00703658199995516,
+    0.00697058399987327,
+    0.006793111000206409
+  ],
+  "notes": "Для персонального звіту додайте модель CPU/GPU і паспортну пропускну здатність RAM/VRAM з посиланням на специфікацію. Цей тест не визначає VRAM bandwidth."
+}
