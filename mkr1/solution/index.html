@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Чекліст із завдання</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <main class="page">
+    <header class="page-heading">
+      <h1>Чекліст із завдання</h1>
+      <p>Перетворіть умову навчального завдання на кроки, вимоги й список матеріалів для здачі.</p>
+    </header>
+
+    <div class="workspace">
+      <div class="inputs">
+        <section class="panel" aria-labelledby="source-title">
+          <div class="panel-header">
+            <h2 id="source-title"><label for="source">Умова завдання</label></h2>
+            <label class="file-control">
+              <input id="assignment-file" type="file" accept=".txt,.md,text/plain,text/markdown">
+              <span class="button secondary">Відкрити TXT або MD</span>
+            </label>
+          </div>
+          <textarea id="source" rows="6" placeholder="Вставте повний текст завдання"></textarea>
+          <div class="actions">
+            <button id="prepare" type="button">Підготувати запит</button>
+            <span id="source-status" role="status" class="status"></span>
+          </div>
+
+          <details id="prompt-panel" class="prompt" hidden>
+            <summary>Запит для ChatGPT</summary>
+            <textarea id="prompt" rows="5" aria-label="Запит для ChatGPT" readonly spellcheck="false"></textarea>
+            <div class="actions">
+              <button id="copy" type="button" class="secondary">Копіювати запит</button>
+              <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Відкрити ChatGPT <span aria-hidden="true">↗</span></a>
+              <span id="copy-status" role="status" class="status"></span>
+            </div>
+          </details>
+        </section>
+
+        <section class="panel" aria-labelledby="response-title">
+          <h2 id="response-title"><label for="response">Відповідь AI</label></h2>
+          <p id="response-help" class="hint">Надішліть підготовлений запит у ChatGPT і вставте сюди отриманий JSON.</p>
+          <textarea id="response" class="code" rows="6" aria-describedby="response-help" placeholder="{ &quot;title&quot;: … }" spellcheck="false"></textarea>
+          <div class="actions">
+            <button id="assemble" type="button">Зібрати чекліст</button>
+            <span id="result-status" role="status" class="status"></span>
+          </div>
+        </section>
+      </div>
+
+      <section class="panel output" aria-labelledby="output-title">
+        <div class="panel-header">
+          <h2 id="output-title">Чекліст</h2>
+          <button id="download" type="button" class="secondary" disabled>Завантажити .md</button>
+        </div>
+        <div id="preview">
+          <p class="empty">Додайте умову й відповідь AI, щоб побачити чекліст.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

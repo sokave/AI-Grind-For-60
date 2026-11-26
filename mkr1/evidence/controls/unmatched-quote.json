@@ -1,0 +1,40 @@
+{
+  "title": "Indoor Voice",
+  "steps": [
+    {
+      "text": "Зчитати один рядок введення користувача й вивести його малими літерами.",
+      "quote": "It should read one line of user input and print the same line with its letters converted to lowercase."
+    },
+    {
+      "text": "Перевірити програму на великих літерах, цілому реченні та числі.",
+      "quote": "Try the program with uppercase words, a whole sentence, and a number."
+    }
+  ],
+  "deliverables": [
+    {
+      "text": "Створити файл indoor.py з програмою на Python.",
+      "quote": "Create `indoor.py` in Python."
+    },
+    {
+      "text": "Здати програму командою submit50 cs50/problems/2022/python/indoor.",
+      "quote": "Submit by Friday at 18:00."
+    }
+  ],
+  "deadlines": [],
+  "constraints": [
+    {
+      "text": "Зберегти пунктуацію та пробільні символи.",
+      "quote": "Retain the input’s punctuation and whitespace."
+    }
+  ],
+  "optional": [
+    {
+      "text": "За бажанням вивести запрошення ввести текст.",
+      "quote": "A visible message asking the user to enter text is optional."
+    },
+    {
+      "text": "За бажанням запустити check50 cs50/problems/2022/python/indoor.",
+      "quote": "You may also run `check50 cs50/problems/2022/python/indoor` to check the solution."
+    }
+  ]
+}

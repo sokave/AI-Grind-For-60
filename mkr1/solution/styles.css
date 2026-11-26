@@ -1,0 +1,80 @@
+:root {
+  color-scheme: light;
+  font-family: "Noto Sans", system-ui, sans-serif;
+  color: #18282b;
+  background: #f2f5f4;
+  --accent: #115d52;
+  --muted: #465e5e;
+  --border: #d6e1de;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, textarea { font: inherit; }
+
+.page { max-width: 1280px; margin: auto; padding: 40px 30px 64px; }
+.page-heading { margin-bottom: 26px; }
+h1 { margin: 0; font-size: clamp(2rem, 4vw, 2.8rem); letter-spacing: -0.045em; }
+.page-heading p { margin: 8px 0 0; color: var(--muted); }
+.workspace { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr); gap: 18px; align-items: start; }
+.inputs { display: grid; gap: 18px; }
+.panel { min-width: 0; padding: 22px; background: #fff; border: 1px solid var(--border); border-radius: 14px; }
+.panel-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; margin-bottom: 14px; }
+h2 { margin: 0; font-size: 1.15rem; letter-spacing: -0.015em; }
+.hint { margin: 8px 0 12px; color: var(--muted); font-size: 0.9rem; line-height: 1.55; }
+
+textarea {
+  display: block;
+  width: 100%;
+  min-height: 105px;
+  resize: vertical;
+  padding: 11px 13px;
+  border: 1px solid #b9cbc6;
+  border-radius: 8px;
+  background: #fbfdfc;
+  color: inherit;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+textarea::placeholder { color: #627473; }
+.code, #prompt { font-family: "Noto Sans Mono", ui-monospace, monospace; font-size: 0.83rem; }
+.actions { display: flex; align-items: center; flex-wrap: wrap; gap: 9px 12px; margin-top: 13px; }
+button, .button { border: 1px solid var(--accent); border-radius: 8px; padding: 8px 12px; background: var(--accent); color: white; font-size: 0.85rem; font-weight: 650; line-height: 1.35; cursor: pointer; }
+button:hover { background: #0d4b42; }
+.secondary { background: #fff; color: var(--accent); border-color: #bfd4cd; }
+.secondary:not(:disabled):hover, .file-control:hover .button { background: #eaf5f0; }
+button:disabled { color: #5e716e; border-color: var(--border); background: #f4f7f6; cursor: default; }
+:focus-visible, .file-control:focus-within .button { outline: 2px solid #227568; outline-offset: 3px; }
+.file-control { position: relative; }
+.file-control input { position: absolute; width: 1px; height: 1px; padding: 0; opacity: 0; }
+.file-control .button { display: block; }
+.actions a { color: var(--accent); text-underline-offset: 3px; font-size: 0.85rem; }
+.status { color: var(--muted); font-size: 0.82rem; }
+.status[data-state="ok"] { color: var(--accent); }
+.status[data-state="error"], .warning { color: #982f22; }
+
+.prompt { margin-top: 16px; border-top: 1px solid var(--border); padding-top: 11px; }
+summary { cursor: pointer; }
+.prompt summary { color: var(--accent); font-size: 0.9rem; font-weight: 650; margin-bottom: 9px; }
+.prompt summary label { cursor: inherit; }
+.output { min-height: 250px; }
+.empty { margin: 36px auto; max-width: 285px; color: var(--muted); line-height: 1.55; text-align: center; }
+.checklist-title { margin: 22px 0 0; font-size: 1.35rem; line-height: 1.25; letter-spacing: -0.025em; overflow-wrap: anywhere; }
+.result-group { border-top: 1px solid var(--border); padding-top: 12px; margin-top: 15px; }
+.result-group h4 { margin: 0 0 8px; color: var(--accent); font-size: 0.93rem; }
+.result-list { list-style: none; padding: 0; margin: 0; }
+.result-list li { padding: 6px 0; overflow-wrap: anywhere; }
+.result-list li.unmatched { margin: 3px 0; padding: 8px; border-radius: 7px; background: #fff2eb; }
+.check-item { display: flex; align-items: baseline; gap: 8px; cursor: pointer; font-size: 0.92rem; line-height: 1.45; }
+.check-item input { flex: 0 0 auto; margin: 0; accent-color: var(--accent); }
+.check-item input:checked + span { color: var(--muted); text-decoration: line-through; }
+.citation { margin: 4px 0 0 21px; color: var(--muted); font-size: 0.79rem; }
+.citation blockquote { margin: 5px 0 2px; padding-left: 9px; border-left: 2px solid var(--border); line-height: 1.45; }
+.unmatched .citation { color: #982f22; }
+.deadline { margin: 0; font-size: 0.92rem; }
+
+@media (max-width: 760px) {
+  .page { padding: 24px 14px 40px; }
+  .workspace { grid-template-columns: 1fr; }
+  .panel { padding: 16px; }
+}
