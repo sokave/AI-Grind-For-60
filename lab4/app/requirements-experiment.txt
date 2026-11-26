@@ -1,2 +1,0 @@
--r requirements.txt
-huggingface_hub==2.4.0
